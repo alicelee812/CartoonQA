@@ -131,7 +131,7 @@ class QuestionViewController: UIViewController {
         index += 1
         updateView()
         
-        //當回答10題時，不能按下一題
+        //當回答到第10題，但沒有選擇答案時，按下一題會直接計算分數
         if index == 10 {
             caculateScore()
         }
